@@ -77,7 +77,7 @@ io.on('connection', socket => {
           rooms[roomId].result = {...x.result, tie: x.result['tie']+1}
         }
         io.to(data.id).emit('starting-new-game', rooms[roomId]);
-      }, 3000)
+      }, 5000)
       
     }
   })
